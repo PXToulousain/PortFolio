@@ -2,260 +2,196 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
     <style>
-        /* Ajouter un style pour placer l'image à droite */
-        .navbar-brand {
-            margin-left: 10px;
-        }
-
-        .navbar img {
-            height: 50px; /* Ajuster la hauteur de l'image si nécessaire */
-            margin-left: auto;
-        }
-
-        .navbar-toggler {
-            margin-right: 10px;
-        }
-        
-        .navbar {
-            background-color: #b4b4b4 !important;
-            color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-
-<body>
-    <header class="no-style">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">LAFITTE Tristan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Stages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="stage1.html">Stage 1</a></li>
-                            <li><a class="dropdown-item" href="stage2.html">Stage 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="veille_informatique.html">Veille Informatique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="portfolio.html" class="nav-link">Mes projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">A propos</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Ajouter l'image à droite -->
-            <img src="docs\BvDSS6EhQHmwDMK0E4UXVQ.webp" alt="Mon image" class="img-fluid" style="border-radius : 50%; margin-right: 10px;">
-        </nav>
-    </header>
-
-<main class="container">
-    <style>
-        /* Global Styles */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f6f8;
             color: #333;
             margin: 0;
-            padding: 0;
+        }
+
+        .navbar {
+            background-color: #b4b4b4 !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .navbar img {
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #007bff;
+            font-weight: 700;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
         }
 
-        /* Titles */
-        h2,
-        h3,
-        h4 {
-            /* color: #007bff; */
-            font-weight: 600;
+        .profile-pic {
+            border-radius: 50%;
+            margin-top: 20px;
+            width: 150px;
         }
 
-        /* Cards */
-        .card {
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+        section {
+            margin-top: 3rem;
         }
 
-        .card-body {
-            padding: 1.5rem;
-        }
-
-        /* Section Titles */
-        .section-title {
-            font-size: 1.4rem;
-            color: #007bff;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        /* Style des listes */
         ul {
-            list-style-type: none;
-            padding-left: 1rem;
-        }
-
-        ul li {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 0.8rem;
+            list-style: none;
+            padding: 0;
         }
 
         ul li::before {
-            content: "✔";
             color: #007bff;
             margin-right: 0.5rem;
         }
 
-        /* Accordion */
-        .accordion-button {
-            background-color: #f8f9fa;
-            color: #007bff;
-            border: 1px solid #ddd;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s;
+        ul li {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 0.7rem;
         }
 
-        .accordion-button:not(.collapsed) {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .accordion-button:hover {
-            background-color: #e2e6ea;
-        }
-
-        .accordion-body {
-            background-color: #f9f9f9;
-            border-top: 1px solid #ddd;
-            padding: 1.2rem;
+        a.btn-primary {
+            margin-top: 20px;
+            font-size: 1.1rem;
             border-radius: 8px;
         }
 
-        /* Modifications pour les sections avec des cartes */
-        .card-body h3 {
-            font-size: 1.25rem;
-            color: #007bff;
+        footer {
+            background-color: #e9ecef;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 4rem;
         }
 
-        /* Listes dans les cartes */
-        .card-body ul li {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        header.no-style ul li::before {
-            content: none;
-            /* Annuler le style pour les li dans le header */
-        }
-
-        /* Responsiveness */
         @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+            .navbar-brand {
+                font-size: 1rem;
             }
 
-            .section-title {
-                font-size: 1.3rem;
+            h1 {
+                font-size: 1.5rem;
             }
 
             h2,
-            h3,
-            h4 {
-                font-size: 1.2rem;
+            h3 {
+                font-size: 1.25rem;
             }
         }
     </style>
-    <section style="text-align: center;">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">LAFITTE Tristan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Stages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="stage1.html">Stage 1</a></li>
+                                <li><a class="dropdown-item" href="stage2.html">Stage 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="veille_informatique.html">Veille Informatique</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Mes projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">À propos</a></li>
+                    </ul>
+                    <img src="docs/TristanPhoto.jpeg" alt="Photo" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center">
         <h1>Bienvenue sur mon Portfolio</h1>
-        <img src="docs\TristanPhoto.jpeg" alt="Photo de profil" width="150" style="border-radius: 50%; margin-top: 20px;">
-        <h2 style="margin-top: 15px;">Je m'appelle Tristan LAFITTE</h2>
-        <p>Je suis étudiant en BTS SIO2 option SLAM, et ce portfolio a pour objectif de présenter mon parcours et mes compétences dans le domaine des services informatiques. Il est conçu pour l'épreuve E4, dans laquelle je démontrerai mes compétences en gestion des services informatiques, analyse de projet, et impact environnemental des technologies.</p>
+        <img src="docs/TristanPhoto.jpeg" alt="Photo de profil" class="profile-pic" />
+        <h2>Je m'appelle Tristan LAFITTE</h2>
+        <p>Je suis étudiant en BTS SIO2 option SLAM. Ce portfolio a pour objectif de présenter mes projets, compétences
+            et expériences dans les services informatiques.</p>
 
-        <h3>À propos de moi</h3>
-        <p>Passionné(e) par l'informatique, j'ai acquis au cours de ma formation des compétences solides en gestion de services informatiques, support technique, ainsi qu'en gestion de projets. Je suis particulièrement intéressé(e) par la mise en place de services durables, en prenant en compte les enjeux environnementaux et la gestion du patrimoine informatique.</p>
+        <section>
+            <h3>À propos de moi</h3>
+            <p>Passionné par l'informatique, je maîtrise le support technique, le développement, la gestion
+                d'infrastructure et la gestion de projet avec un regard attentif aux enjeux environnementaux.</p>
+        </section>
 
-        <h3>Mes compétences</h3>
-        <p>Je maîtrise plusieurs compétences techniques, allant de la gestion de l'infrastructure informatique, à la résolution d'incidents et de demandes d'assistance. Voici quelques-unes de mes compétences clés :</p>
-        <ul style="list-style-type: none; padding: 0;">
-            <li>🔹 Gestion du patrimoine informatique</li>
-            <li>🔹 Traitement des demandes de services réseau et applicatifs</li>
-            <li>🔹 Développement et mise à jour de services en ligne</li>
-            <li>🔹 Participation à l'évolution d'un site web</li>
-            <li>🔹 Analyse et gestion de projets informatiques</li>
-            <li>🔹 Veille technologique sur l'impact environnemental des technologies</li>
-        </ul>
+        <section>
+            <h3>Mes compétences</h3>
+            <ul>
+                <li>Gestion du patrimoine informatique</li>
+                <li>Support technique aux utilisateurs</li>
+                <li>Déploiement de services réseau/applicatifs</li>
+                <li>Participation à l'évolution de sites web</li>
+                <li>Analyse et suivi de projets informatiques</li>
+                <li>Veille technologique & écologique</li>
+            </ul>
+        </section>
 
-        <h3>Mes projets et réalisations</h3>
-        <p>Voici un aperçu des projets sur lesquels j'ai travaillé au cours de ma formation, notamment en lien avec les services informatiques et leur impact environnemental :</p>
-        <ul style="list-style-type: none; padding: 0;">
-            <li>🔹 <strong>Gestion du patrimoine informatique</strong> : Mise en place d'une méthode pour recenser et identifier les ressources numériques d'une entreprise.</li>
-            <li>🔹 <strong>Veille sur l'impact environnemental des technologies</strong> : Recherche sur l'impact écologique des technologies informatiques et mise en place d'initiatives pour réduire l'empreinte carbone.</li>
-            <li>🔹 <strong>Développement de services en ligne</strong> : Développement d'une plateforme pour centraliser les services informatiques internes et améliorer la gestion des demandes d'assistance.</li>
-        </ul>
+        <section>
+            <h3>Mes projets et réalisations</h3>
+            <ul>
+                <li><strong>Gestion du patrimoine informatique :</strong> inventaire et suivi des équipements
+                    numériques.</li>
+                <li><strong>Veille environnementale :</strong> recherche sur la sobriété numérique.</li>
+                <li><strong>Développement de services :</strong> plateforme d'assistance interne (formulaires, tickets).
+                </li>
+            </ul>
+            <a href="portfolio.html" class="btn btn-primary">Découvrir mes projets</a>
+        </section>
 
-        <h3>Pourquoi ce portfolio ?</h3>
-        <p>Ce portfolio permet de présenter de manière structurée mes projets et mes compétences acquises lors de ma formation. Il est conçu pour l’épreuve E4 et il montre comment je gère, déploie et améliore des services informatiques tout en tenant compte des enjeux environnementaux et juridiques associés à ces services.</p>
+        <section>
+            <h3>Langages actuellement maîtrisés</h3>
+            <ul>
+                <li><strong>Web :</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Back-end :</strong> PHP, Java</li>
+                <li><strong>Systèmes :</strong> Python, C++, Android, Linux, Windows</li>
+                <li><strong>Bases de données :</strong> SQL, MariaDB, MongoDB, Oracle (Tablespaces)</li>
+            </ul>
+        </section>
+    </main>
 
-        <a href="portfolio.html" style="display: inline-block; padding: 12px 25px; background-color: #007bff; color: white; text-decoration: none; border-radius: 8px; margin-top: 20px; font-size: 18px;">Découvrir mes projets et compétences</a>
-    </section>
-
-    <section style="margin-top: 50px; text-align: center;">
-        <h3>Mes compétences détaillées :</h3>
-        <ul style="list-style-type: none; padding: 0;">
-            <li>🔹 Gérer le patrimoine informatique : Recenser, identifier et maintenir les ressources numériques.</li>
-            <li>🔹 Support technique : Répondre aux incidents et aux demandes d'assistance pour garantir la continuité des services.</li>
-            <li>🔹 Gestion des services : Déployer, tester et maintenir des services informatiques pour les utilisateurs.</li>
-            <li>🔹 Gestion de projets informatiques : Planifier, suivre et analyser les projets en cours pour répondre aux besoins de l'organisation.</li>
-            <li>🔹 Veille environnementale : Analyser l'impact des technologies sur l'environnement et proposer des solutions pour réduire cet impact.</li>
-        </ul>
-    </section>
-
-    <section style="margin-top: 50px; text-align: center;">
-        <h3>Langages actuellement connues :</h3>
-        <ul style="list-style-type: none; padding: 0;">
-            <li>🔹 <strong> Web : </strong> Html, Css, JavaScript </li>
-            <li>🔹 <strong> Back-end : </strong> PHP, Java</li>
-            <li>🔹 <strong> Systèmes : </strong> Python, C++, Android, Linux, Windows</li>
-            <li>🔹 <strong> Base de données : </strong> SQL, MariaDB, MongoDB, Tablespaces ORACLE, NoSQL</li>
-        </ul>
-    </section>
-</main>
-
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2025 Mon Portfolio
-        </div>
+    <footer>
+        © 2025 Mon Portfolio - Tristan Lafitte
     </footer>
 
-    <!-- Lien correct vers Bootstrap 5 JS -->
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
