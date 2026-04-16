@@ -89,6 +89,16 @@
             margin-top: 4rem;
         }
 
+        .card {
+            border: none;
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
         @media (max-width: 768px) {
             .navbar-brand {
                 font-size: 1rem;
@@ -128,12 +138,9 @@
                                 <li><a class="dropdown-item" href="stage2.html">Stage 2</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="veille_informatique.html">Veille Informatique</a>
-                        </li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.html">Mes projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">À propos</a></li>
                     </ul>
-                    <img src="docs/TristanPhoto.jpeg" alt="Photo" />
+                    <img src="docs/BvDSS6EhQHmwDMK0E4UXVQ.webp" alt="Photo" />
                 </div>
             </div>
         </nav>
@@ -141,27 +148,106 @@
 
     <main class="container text-center">
         <h1>Bienvenue sur mon Portfolio</h1>
-        <img src="docs/TristanPhoto.jpeg" alt="Photo de profil" class="profile-pic" />
+        <img src="docs/TristanPhoto.png" alt="Photo de profil" class="profile-pic" />
         <h2>Je m'appelle Tristan LAFITTE</h2>
-        <p>Je suis étudiant en BTS SIO2 option SLAM. Ce portfolio a pour objectif de présenter mes projets, compétences
-            et expériences dans les services informatiques.</p>
+        <p>
+            Inscrit pour l'année 2026-2027 en tant qu'Étudiant en Bachelor 3 Développement Web à l’école IRIS
+            (MediaSchool), je me spécialise
+            dans la conception et le développement d’applications web full-stack. À travers ce portfolio,
+            je vous propose de découvrir mon parcours, mes compétences techniques ainsi que les projets
+            que j’ai réalisés dans le domaine de l’informatique.
+        </p>
 
         <section>
             <h3>À propos de moi</h3>
-            <p>Passionné par l'informatique, je maîtrise le support technique, le développement, la gestion
-                d'infrastructure et la gestion de projet avec un regard attentif aux enjeux environnementaux.</p>
+            <p>
+                Passionné par l’informatique, je possède des compétences en support technique, développement web,
+                gestion d’infrastructures et conduite de projets. Sérieux et autonome, je m’intéresse également
+                aux enjeux environnementaux du numérique, en intégrant des pratiques responsables dans mes réalisations.
+            </p>
         </section>
 
-        <section>
-            <h3>Mes compétences</h3>
+        <section id="skills">
+            <h3>Compétences</h3>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-5">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Langages</h5>
+                            <ul class="list-unstyled">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>PHP, Java</li>
+                                <li>Python, Android</li>
+                                <li>SQL, MySQL, Oracle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Outils & Technologies</h5>
+                            <ul class="list-unstyled">
+                                <li>VS Code, IntelliJ, Eclipse</li>
+                                <li>Wamp, Git</li>
+                                <li>API REST, Chart.js</li>
+                                <li>Méthodes Agile (Scrum)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h5 class="mt-3">Réseaux</h5>
             <ul>
-                <li>Gestion du patrimoine informatique</li>
-                <li>Support technique aux utilisateurs</li>
-                <li>Déploiement de services réseau/applicatifs</li>
-                <li>Participation à l'évolution de sites web</li>
-                <li>Analyse et suivi de projets informatiques</li>
-                <li>Veille technologique & écologique</li>
+                <li>Adressage IP / Sous-réseaux</li>
+                <li>VLAN / Routage</li>
             </ul>
+        </section>
+        <section>
+            <h3>Formation</h3>
+            <ul>
+                <li>BTS SIO SLAM - Lycée Paul Sabatier (2023 - 2025)</li>
+                <li>Bac Pro Systèmes Numériques (2020 - 2023)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h3>Expériences</h3>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-5">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Développement web (BTS)</h5>
+                            <ul class="list-unstyled">
+                                <li>Création d'applications web (PHP, JS, SQL)</li>
+                                <li>Utilisation d'API et bases de données</li>
+                                <li>Développement front-end et back-end</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Projets techniques</h5>
+                            <ul class="list-unstyled">
+                                <li>Création d'outils de gestion</li>
+                                <li>Visualisation avec Chart.js</li>
+                                <li>Automatisation via scripts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section>
@@ -174,16 +260,6 @@
                 </li>
             </ul>
             <a href="portfolio.html" class="btn btn-primary">Découvrir mes projets</a>
-        </section>
-
-        <section>
-            <h3>Langages actuellement maîtrisés</h3>
-            <ul>
-                <li><strong>Web :</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Back-end :</strong> PHP, Java</li>
-                <li><strong>Systèmes :</strong> Python, C++, Android, Linux, Windows</li>
-                <li><strong>Bases de données :</strong> SQL, MariaDB, MongoDB, Oracle (Tablespaces)</li>
-            </ul>
         </section>
     </main>
 
